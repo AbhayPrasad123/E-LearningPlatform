@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Frontend",
+      "path": "Frontend",
+      "buildCommand": "npm install && npm run build",
+      "outputDirectory": "frontend/build"
+    },
+    {
+      "name": "Backend",
+      "path": "Backend",
+      "buildCommand": "npm install",
+      "startCommand": "npm start"
+    }
+  ],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" }
+  ]
+}
